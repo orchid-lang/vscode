@@ -1,0 +1,25 @@
+{
+  "name": "orchid-lang",
+  "displayName": "Orchid language support",
+  "description": "Language support for Orchid",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "orchid",
+      "aliases": ["Orchid", "orchid"],
+      "extensions": [".orh"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "orchid",
+      "scopeName": "source.orchid",
+      "path": "./syntaxes/orchid.tmLanguage.json"
+    }]
+  }
+}
