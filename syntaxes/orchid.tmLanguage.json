@@ -3,17 +3,44 @@
 	"name": "Orchid",
 	"patterns": [
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#variables"
 		}
 	],
 	"repository": {
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.double-slash.orchid",
+				"match": "//.*$"
+			}]
+		},
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.orchid",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(if|while|for|return|start|define|as|start|end|let|make|lambda|then|takes|gives|catch)\\b"
+			}, {
+				"name": "keyword.control.less.orchid",
+				"match": "\\b(function)\\b"
+			}, {
+				"name": "emphasis",
+				"match": "\\b(main|try)\\b"
 			}]
 		},
 		"strings": {
@@ -24,6 +51,34 @@
 				{
 					"name": "constant.character.escape.orchid",
 					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.orchid",
+					"match": "\\b\\d+(\\.\\d+)?\\b"
+				}
+			]
+		},
+		"types": {
+			"patterns": [{
+				"name": "storage.type.orchid",
+				"match": "\\b(string|int)\\b"
+			}]
+		},
+		"functions": {
+			"patterns": [ {
+				"name": "entity.name.function.orchid",
+				"match": "\\b(\\w+)\\s*\\("
+			}]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.other.orchid",
+					"match": "\\b\\w+\\b"
 				}
 			]
 		}
