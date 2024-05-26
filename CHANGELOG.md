@@ -16,3 +16,4 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - v1.0.0 Updated metadata
 - v1.0.0 Removed single quotes
+- v1.0.0 Added icon
