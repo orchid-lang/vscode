@@ -2,7 +2,7 @@
   "name": "orchid-lang",
   "displayName": "Orchid language support",
   "description": "Language support for Orchid",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.89.0"
   },
@@ -16,7 +16,11 @@
       "id": "orchid",
       "aliases": ["Orchid", "orchid"],
       "extensions": [".orh"],
-      "configuration": "./language-configuration.json"
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "dark": "./orchid-lang-icon.svg",
+        "light": "./orchid-lang-icon.svg"
+      }
     }],
     "grammars": [{
       "language": "orchid",

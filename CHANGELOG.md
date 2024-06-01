@@ -17,3 +17,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - v1.0.0 Updated metadata
 - v1.0.0 Removed single quotes
 - v1.0.0 Added icon
+
+## [1.1.0]
+
+### Added
+
+- v1.1.0 Added a file icon
